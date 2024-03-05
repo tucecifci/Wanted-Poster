@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Ultra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #291200;
+}
+
+body {
+    font-family: 'Ewert', serif;
+    font-family: 'Ultra', serif;
+    background-image: url(images/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+#container {
+    background-image: url(images/parchment.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 650px;
+    margin: 10px auto;
+    margin-top: 70px;
+    /*filter: grayscale(100%);*/
+}
+
+#container header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container header h1 {
+    font-family: ewert;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+#container header h4 {
+    font-size: 17px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main img {
+    width: 250px;
+    border: 2px solid black;
+}
+
+main h2 {
+    font-size: 35px;
+}
+
+main p {
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer #price {
+    font-size: 40px;
+}
+
+button {
+    background-image: url(images/parchment.jpg);
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: ewert;
+    font-size: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: none;
+    text-decoration: line-through;
+    border: none;
+    color: orange;
+    letter-spacing: 2px;
+}
+
+#x {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 600px;
+    color: red;
+    font-weight: 100;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: lily;
+    animation-duration: 0.4s;
+    animation-delay: 0.3s;
+}
+
+@keyframes lily {
+    from {
+
+        transform: scale(1);
+    }
+
+    to {
+
+        transform: scale(1.2);
+
+    }
+}
